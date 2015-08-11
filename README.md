@@ -8,6 +8,8 @@ If you need assistance, I'd be happy to help. Contact me through www.pdxpixel.co
 
 ## Usage
 
-This method assumes you have an app such as comments. In my case, I had an app called board and within the board, there were cards, each of which could have multiple comments... The user can add comments, similar to how how you can comment to any tweet. The model would contain a comment class that would have a field message. The form would have a ModelForm class to add the comment.
+This method assumes you have an app such as comments. In my case, I had an app called board and within the board, there were cards, each of which could have multiple comments... The user can add comments, similar to how how you can comment to any tweet. The model would contain a comment class that would have a field message. The form would have a `ModelForm` class to add the comment.
 
-Then, to get multiple forms, you would loop through (in my case, cards in a board)
+Then, to get multiple forms, in the template, you would loop through (in my case, cards in a board) whatever model you are using and each one would have a comment form. So if there were multiple cards with multiple comments (as in my case), each would have a form. What makes this method cool is that I have a add card form on the same page, as well. So this can coexist with the many comment forms.
+
+Remember, this is not a reusable app, just an example with code snippets. I am working on making it into an app for use in complete projects.
