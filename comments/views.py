@@ -11,7 +11,7 @@ from .forms import AddCommentForm
 class AddCommentView(View):
     comment_model = Comment
     comment_form_class = AddCommentForm
-    template_name = 'dashboard/dashboard.html'
+    template_name = 'base.html'
 
     @method_decorator(login_required)
     def post(self, request):
